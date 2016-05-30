@@ -1,7 +1,7 @@
 from __future__ import print_function
 
 import argparse
-import os
+import os, sys
 
 from isort import isort
 
@@ -34,4 +34,4 @@ def main(argv=None):
     return return_value
 
 if __name__ == '__main__':
-    exit(main())
+    exit(main(sys.argv[1:]))
